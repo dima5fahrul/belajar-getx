@@ -43,10 +43,6 @@ class Increment extends StatelessWidget {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () => counter.changeTheme(),
-        child: const Icon(Icons.dark_mode),
-      ),
     );
   }
 }

@@ -24,7 +24,7 @@ class GetBuilderPage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          personC.changeUpperCase();
+          personC.changePerson();
         },
         child: const Icon(Icons.add),
       ),

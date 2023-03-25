@@ -24,8 +24,18 @@ class PersonControllerV2 extends GetxController {
 class PersonControllerV3 extends GetxController {
   var person = Person(name: "John", age: 20);
 
-  void changeUpperCase() {
+  void changePerson() {
     person.name = person.name.toString().toUpperCase();
     update();
+  }
+}
+
+class PersonControllerV4 extends GetxController {
+  var person = Person(name: "John", age: 20);
+
+  void changePerson() {
+    person.name = person.name.toString().toUpperCase();
+    person.age = person.age + 1;
+    update(['name', 'age']);
   }
 }
